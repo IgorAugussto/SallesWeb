@@ -18,6 +18,14 @@ namespace SallesWeb.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Salles Web MVC App.";
+            ViewData["nome"] = "Igor Augusto";
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
